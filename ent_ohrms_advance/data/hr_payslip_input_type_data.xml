@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!--Adding a salary rule for advance-->
+	<data>
+        <record id="hr_rule_input_type_advance" model="hr.payslip.input.type">
+            <field name="code">AD</field>
+            <field name="name">Advance</field>
+            <field name="input_id" ref="hr_salary_rule_advance"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--Adding a salary rule for advance-->
+    <data>
+        <!--  Adding the advance rule for Regular pay structure.   -->
+        <record id="hr_salary_rule_advance" model="hr.salary.rule">
+            <field name="code">AD</field>
+            <field name="name">Advance</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'AD' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = - inputs['AD'].amount
+            </field>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="sequence" eval="190"/>
+            <field name="struct_id" ref="ent_ohrms_advance.hr_payroll_structure_regular_pay"/>
+        </record>
+    </data>
+</odoo>

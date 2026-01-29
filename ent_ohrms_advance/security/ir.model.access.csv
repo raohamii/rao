@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_advance_user,hr.advance.group_user,model_hr_advance,base.group_user,1,1,1,0
+access_hr_jobuser,hr.job.group_user,hr.model_hr_job,base.group_user,1,1,1,0
+access_hr_advance_line_user,hr.advance.line.group_user,model_hr_advance_line,base.group_user,1,1,1,0
+access_hr_advance_officer,hr.advance.group_hr_user,model_hr_advance,hr.group_hr_user,1,1,1,1
+access_hr_advance_line_officer,hr.advance.line.group_hr_user,model_hr_advance_line,hr.group_hr_user,1,1,1,1
+access_hr_advance_manager,hr.advance,model_hr_advance,hr.group_hr_manager,1,1,1,1
+access_hr_advance_line_manager,hr.advance.line,model_hr_advance_line,hr.group_hr_manager,1,1,1,1
